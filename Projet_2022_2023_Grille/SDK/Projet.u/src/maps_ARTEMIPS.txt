@@ -1,0 +1,38 @@
+Information sur le module maps_ARTEMIPS ce base sur Grille_multiple.
+
+Prend en entrée les valeurs x,y,z du lidar du véhicule dans le INPUT.
+Ensuite de col_size jusqu'à facteur ces données sont les sortie de definitions_grille.
+La dernière entrée vitesse_in prend la sortie de maps_add qui est la première sortie.
+
+Il possède trois sortie la première output qui correspond à l'image de notre
+grille d'accumulation coresspondante.
+La seconde correspond à la vitesse que l'on doit retirer au véhicule et sera donc l'entrée
+de maps_add.
+La dernière sortie correspond à l'angle de l'obstacle important détecter.
+
+On posssède plusieur propriété dont la première le fait que la grille est en RGB.
+Ce module à comme propriété la multpilication pour la dimmension (m,cm,...) 
+des lidar à éffectuer pour obtenir les données en m.
+Une seconde propriétées qui consiste à sélectionner quel lidar entre celui de 
+gauche ou droite est uliser.
+Puis on a z_min et z_max que l'on doit choisir 
+pour filtrer nos points avec ceux que l'on veut garder.
+On doit encore définir la vitesse de référence du véhicule qui est la vitesse max.
+La distance entre le véhicule à l'arrêt et l'obstacle que l'on souhaite.
+Ensuite on a trois définitions des valeurs nécessaire à détecter pour dire
+la précense d'un objet pour une taille de 25cm,50cm et 1m.
+Avec les distance de visions que l'on utilise pour définir la taille.
+
+Finalement, on arrive au paramètres du règlage de la vitesse.
+La première est val qui correspond à l'importance de l'angle que l'on utilise dans 
+la première formule de sélection de la vitesse.
+Ensuite on a k_max et k_min qui corresponde à l'importance de l'angle que l'on lui donne.
+Angle_max qui correspond lui à la valeur maximum que l'on peut obtenir sur la grille.
+Et ensuite une propriété qui nous permet de choisir entre les deux. 
+
+Puis la position de l'avant du véhicule comparé au Lidar et aussi le début de la grille.
+
+On prend les valeurs du lidar, que l'on va filtrer selon z pour créer des vecteurs x et y utilisable.
+Ensuite, on utilise ces nouveaux vecteur pour créer notre grille en mettant à jour les 
+pixel jusqu'à une distance calculé si obstacle détecté avant celui-ci sinon si détecté après
+fini la colonne et s'arrête.

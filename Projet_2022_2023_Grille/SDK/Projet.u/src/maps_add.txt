@@ -1,0 +1,20 @@
+Information sur le module maps_add
+
+Elle prend en première entrée(vitesse_mod) un Integer32
+la valeur de sortie outpout des grilles 
+qui est une vitesse en Km/h.
+
+La seconde entrée (vitesse_actuelle) un Integer32,
+est la vitesse du véhicule
+obtenue à l'aide des capteurs.
+
+ On a besoin de définir une vitesse de références 
+ qui est la vitesse maximal que l'on souhaite que levéhicule atteigne
+ Cette vitesse en un entier
+ 
+ On a une première sortie output un Integer32 qui retourne
+ la différence entre le vitesse de référence et la vitesse
+ de sortie des grille(vitesse_mod), le résultat est la vitesse souhaité
+ 
+ La seconde sortie elle sort soit 0 pas de freinage soit -18000
+ si la vitesse_actuelle est supérieur à la vitesse résultante

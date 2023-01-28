@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.9" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="2.0.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_kitti_importer/rtmaps_kitti_importer.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_kitti_importer/rtmaps_kitti_importer.pck]]></Relative></File>
+    <File Version="1.0"><![CDATA[C:/Users/Public/Documents/RTMaps SDK Projects/packages/debug/Projet.pck]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Public/Documents/RTMaps SDK Projects/packages/debug/Projet.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="add_1" Model="add" Version="1.0" x="488" y="280" z="0">
+    <Input LongName="add_1.vitesse_mod" Name="vitesse_mod">
+      <Property LongName="add_1.vitesse_mod.readerType" Type="1">0</Property>
+      <Property LongName="add_1.vitesse_mod.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="add_1.vitesse_actuelle" Name="vitesse_actuelle">
+      <Property LongName="add_1.vitesse_actuelle.readerType" Type="1">0</Property>
+      <Property LongName="add_1.vitesse_actuelle.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="add_1.output" Name="output">
+      <Property LongName="add_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="add_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="add_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="add_1.freinage" Name="freinage">
+      <Property LongName="add_1.freinage.subsampling" Type="1">1</Property>
+      <Property LongName="add_1.freinage.fifosize" Type="1">16</Property>
+      <Property LongName="add_1.freinage.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="add_1.vit_ref" Type="1">20</Property>
+    <Property LongName="add_1.threaded" Type="0">true</Property>
+    <Property LongName="add_1.priority" Type="1">128</Property>
+    <Property LongName="add_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="880" y="224" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">63</Property>
+    <Property LongName="DataViewer_1.y" Type="1">464</Property>
+    <Property LongName="DataViewer_1.width" Type="1">530</Property>
+    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="definitions_grille_1" Model="definitions_grille" Version="1.0" x="432" y="104" z="0">
+    <Input LongName="definitions_grille_1.vitesse" Name="vitesse">
+      <Property LongName="definitions_grille_1.vitesse.readerType" Type="1">0</Property>
+      <Property LongName="definitions_grille_1.vitesse.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="definitions_grille_1.col_size" Name="col_size">
+      <Property LongName="definitions_grille_1.col_size.subsampling" Type="1">1</Property>
+      <Property LongName="definitions_grille_1.col_size.fifosize" Type="1">16</Property>
+      <Property LongName="definitions_grille_1.col_size.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="definitions_grille_1.case_size" Name="case_size">
+      <Property LongName="definitions_grille_1.case_size.subsampling" Type="1">1</Property>
+      <Property LongName="definitions_grille_1.case_size.fifosize" Type="1">16</Property>
+      <Property LongName="definitions_grille_1.case_size.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="definitions_grille_1.x_out" Name="x_out">
+      <Property LongName="definitions_grille_1.x_out.subsampling" Type="1">1</Property>
+      <Property LongName="definitions_grille_1.x_out.fifosize" Type="1">16</Property>
+      <Property LongName="definitions_grille_1.x_out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="definitions_grille_1.y_out" Name="y_out">
+      <Property LongName="definitions_grille_1.y_out.subsampling" Type="1">1</Property>
+      <Property LongName="definitions_grille_1.y_out.fifosize" Type="1">16</Property>
+      <Property LongName="definitions_grille_1.y_out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="definitions_grille_1.facteur_out" Name="facteur_out">
+      <Property LongName="definitions_grille_1.facteur_out.subsampling" Type="1">1</Property>
+      <Property LongName="definitions_grille_1.facteur_out.fifosize" Type="1">16</Property>
+      <Property LongName="definitions_grille_1.facteur_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="definitions_grille_1.x" Type="1">80</Property>
+    <Property LongName="definitions_grille_1.y" Type="1">3</Property>
+    <Property LongName="definitions_grille_1.facteur" Type="1">20</Property>
+    <Property LongName="definitions_grille_1.threaded" Type="0">true</Property>
+    <Property LongName="definitions_grille_1.priority" Type="1">128</Property>
+    <Property LongName="definitions_grille_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Grille_1" Model="Grille" Version="1.0" x="672" y="88" z="0">
+    <Input LongName="Grille_1.input" Name="input">
+      <Property LongName="Grille_1.input.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.col_size" Name="col_size">
+      <Property LongName="Grille_1.col_size.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.col_size.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.case_size" Name="case_size">
+      <Property LongName="Grille_1.case_size.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.case_size.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.x_in" Name="x_in">
+      <Property LongName="Grille_1.x_in.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.x_in.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.y_in" Name="y_in">
+      <Property LongName="Grille_1.y_in.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.y_in.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.facteur" Name="facteur">
+      <Property LongName="Grille_1.facteur.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.facteur.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="Grille_1.vitesse_in" Name="vitesse_in">
+      <Property LongName="Grille_1.vitesse_in.readerType" Type="1">0</Property>
+      <Property LongName="Grille_1.vitesse_in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Grille_1.output" Name="output">
+      <Property LongName="Grille_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Grille_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Grille_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Grille_1.vit" Name="vit">
+      <Property LongName="Grille_1.vit.subsampling" Type="1">1</Property>
+      <Property LongName="Grille_1.vit.fifosize" Type="1">16</Property>
+      <Property LongName="Grille_1.vit.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Grille_1.alpha" Name="alpha">
+      <Property LongName="Grille_1.alpha.subsampling" Type="1">1</Property>
+      <Property LongName="Grille_1.alpha.fifosize" Type="1">16</Property>
+      <Property LongName="Grille_1.alpha.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Grille_1.pColorModel" Type="3"><![CDATA[RGB]]></Property>
+    <Property LongName="Grille_1.z_min" Type="2">-0.1</Property>
+    <Property LongName="Grille_1.z_max" Type="2">0.5</Property>
+    <Property LongName="Grille_1.vit_ref" Type="1">20</Property>
+    <Property LongName="Grille_1.distance_arret" Type="1">2</Property>
+    <Property LongName="Grille_1.threashold25" Type="1">3</Property>
+    <Property LongName="Grille_1.threashold5" Type="1">6</Property>
+    <Property LongName="Grille_1.threashold1" Type="1">9</Property>
+    <Property LongName="Grille_1.distance1" Type="1">80</Property>
+    <Property LongName="Grille_1.distance5" Type="1">60</Property>
+    <Property LongName="Grille_1.distance25" Type="1">40</Property>
+    <Property LongName="Grille_1.val" Type="2">4</Property>
+    <Property LongName="Grille_1.lidar_voiture" Type="2">2</Property>
+    <Property LongName="Grille_1.x_start" Type="2">0</Property>
+    <Property LongName="Grille_1.k_max" Type="2">4</Property>
+    <Property LongName="Grille_1.k_min" Type="2">1</Property>
+    <Property LongName="Grille_1.angle_max" Type="2">120</Property>
+    <Property LongName="Grille_1.critere_de_vitesse" Type="4"><![CDATA[2|0|produit|fonction_lineaire]]></Property>
+    <Property LongName="Grille_1.threaded" Type="0">true</Property>
+    <Property LongName="Grille_1.priority" Type="1">128</Property>
+    <Property LongName="Grille_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="208" y="16" z="0">
+    <Input LongName="ImageViewer_1.input" Name="input">
+      <Property LongName="ImageViewer_1.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_1.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_1.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oROI" Name="oROI">
+      <Property LongName="ImageViewer_1.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_1.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_1.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_1.left" Type="1">431</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">381</Property>
+    <Property LongName="ImageViewer_1.width" Type="1">590</Property>
+    <Property LongName="ImageViewer_1.height" Type="1">272</Property>
+    <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_1.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_1.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_1.sequentialRender" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_1.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_2" Model="ImageViewer" Version="1.23.2" x="896" y="72" z="0">
+    <Input LongName="ImageViewer_2.input" Name="input">
+      <Property LongName="ImageViewer_2.input.readerType" Type="1">2</Property>
+      <Property LongName="ImageViewer_2.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="ImageViewer_2.oMouseClick" Name="oMouseClick">
+      <Property LongName="ImageViewer_2.oMouseClick.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oMouseClick.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oMouseClick.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2.oROI" Name="oROI">
+      <Property LongName="ImageViewer_2.oROI.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oROI.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="ImageViewer_2.oWindowEvent" Name="oWindowEvent">
+      <Property LongName="ImageViewer_2.oWindowEvent.subsampling" Type="1">1</Property>
+      <Property LongName="ImageViewer_2.oWindowEvent.fifosize" Type="1">16</Property>
+      <Property LongName="ImageViewer_2.oWindowEvent.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="ImageViewer_2.left" Type="1">61</Property>
+    <Property LongName="ImageViewer_2.top" Type="1">128</Property>
+    <Property LongName="ImageViewer_2.width" Type="1">1920</Property>
+    <Property LongName="ImageViewer_2.height" Type="1">986</Property>
+    <Property LongName="ImageViewer_2.autoResize" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.fullscreen" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.monitorForFullscreen" Type="1">1</Property>
+    <Property LongName="ImageViewer_2.displayTitleBar" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.displayBorder" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
+    <Property LongName="ImageViewer_2.keepAspectRatio" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
+    <Property LongName="ImageViewer_2.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="ImageViewer_2.sequentialRender" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.verbose" Type="0">false</Property>
+    <Property LongName="ImageViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="ImageViewer_2.priority" Type="1">128</Property>
+    <Property LongName="ImageViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Integer_constants_generator_1" Model="Integer_constants_generator" Version="2.5.1" x="224" y="296" z="0">
+    <Output LongName="Integer_constants_generator_1.output" Name="output">
+      <Property LongName="Integer_constants_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Integer_constants_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Integer_constants_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Integer_constants_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Integer_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.vectorSize" Type="1">1</Property>
+    <Property LongName="Integer_constants_generator_1.outputPeriod" Type="1">100</Property>
+    <Property LongName="Integer_constants_generator_1.value_1" Type="1">10</Property>
+    <Property LongName="Integer_constants_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Integer_constants_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="KittiImporter_1" Model="KittiImporter" Version="2.0.0" x="104" y="112" z="0">
+    <Output LongName="KittiImporter_1.image_00" Name="image_00">
+      <Property LongName="KittiImporter_1.image_00.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.image_00.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.image_00.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.image_01" Name="image_01">
+      <Property LongName="KittiImporter_1.image_01.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.image_01.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.image_01.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.image_02" Name="image_02">
+      <Property LongName="KittiImporter_1.image_02.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.image_02.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.image_02.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.image_03" Name="image_03">
+      <Property LongName="KittiImporter_1.image_03.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.image_03.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.image_03.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.oxts" Name="oxts">
+      <Property LongName="KittiImporter_1.oxts.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.oxts.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.oxts.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.velodyne_points_xyz" Name="velodyne_points_xyz">
+      <Property LongName="KittiImporter_1.velodyne_points_xyz.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.velodyne_points_xyz.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.velodyne_points_xyz.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="KittiImporter_1.velodyne_points_reflectivity" Name="velodyne_points_reflectivity">
+      <Property LongName="KittiImporter_1.velodyne_points_reflectivity.subsampling" Type="1">1</Property>
+      <Property LongName="KittiImporter_1.velodyne_points_reflectivity.fifosize" Type="1">16</Property>
+      <Property LongName="KittiImporter_1.velodyne_points_reflectivity.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="KittiImporter_1.DataDirectory" Type="3" SubType="96"><![CDATA[C:/Users/gross/Documents/M2/Projet/2011_09_29/2011_09_29_drive_0071_extract/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/2011_09_29/2011_09_29_drive_0071_extract]]></Relative></Property>
+    <Property LongName="KittiImporter_1.MaxNumberOfVelodynePointsPerFile" Type="1">125000</Property>
+    <Property LongName="KittiImporter_1.ReplayMode" Type="4"><![CDATA[2|1|Immediate|Clocked]]></Property>
+    <Property LongName="KittiImporter_1.UseTracklets" Type="0">false</Property>
+    <Property LongName="KittiImporter_1.TimeBase" Type="4"><![CDATA[3|0|RTMaps|Zero|KITTI]]></Property>
+    <Property LongName="KittiImporter_1.Loop" Type="0">true</Property>
+    <Property LongName="KittiImporter_1.threaded" Type="0">true</Property>
+    <Property LongName="KittiImporter_1.priority" Type="1">128</Property>
+    <Property LongName="KittiImporter_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="Grille_1.vit" Input="add_1.vitesse_mod"/>
+  <Connection Output="Integer_constants_generator_1.output" Input="add_1.vitesse_actuelle"/>
+  <Connection Output="add_1.output" Input="DataViewer_1.input_0"/>
+  <Connection Output="Grille_1.alpha" Input="DataViewer_1.input_1"/>
+  <Connection Output="add_1.output" Input="definitions_grille_1.vitesse"/>
+  <Connection Output="KittiImporter_1.velodyne_points_xyz" Input="Grille_1.input"/>
+  <Connection Output="definitions_grille_1.col_size" Input="Grille_1.col_size"/>
+  <Connection Output="definitions_grille_1.case_size" Input="Grille_1.case_size"/>
+  <Connection Output="definitions_grille_1.x_out" Input="Grille_1.x_in"/>
+  <Connection Output="definitions_grille_1.y_out" Input="Grille_1.y_in"/>
+  <Connection Output="definitions_grille_1.facteur_out" Input="Grille_1.facteur"/>
+  <Connection Output="add_1.output" Input="Grille_1.vitesse_in"/>
+  <Connection Output="KittiImporter_1.image_00" Input="ImageViewer_1.input"/>
+  <Connection Output="Grille_1.output" Input="ImageViewer_2.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ConnectionShape InstanceName="add_1.vitesse_actuelle" color="0"/>
+    <ConnectionShape InstanceName="add_1.vitesse_mod" color="0"/>
+    <ConnectionShape InstanceName="ARTEMIPS_1.input" color="0"/>
+    <ConnectionShape InstanceName="Camera.input" color="0"/>
+    <ConnectionShape InstanceName="CANDecoder_7.input" color="0"/>
+    <ConnectionShape InstanceName="combinaison_et_decision_1.mi_o" color="0"/>
+    <ConnectionShape InstanceName="combinaison_et_decision_1.mi_Yci" color="0"/>
+    <ConnectionShape InstanceName="combinaison_et_decision_1.mi_Yi" color="0"/>
+    <ConnectionShape InstanceName="data_vectorizer_1.i_data_1" color="0"/>
+    <ConnectionShape InstanceName="data_vectorizer_1.i_data_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_2" color="0"/>
+    <ConnectionShape InstanceName="definitions_grille_1.vitesse" color="0"/>
+    <ConnectionShape InstanceName="definitions_grille_1.vitesse_reel" color="0"/>
+    <ConnectionShape InstanceName="GL2_3D_Viewer_1.object_0_data" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.case_div" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.case_size" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.col_div" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.col_size" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.facteur" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.input" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.pHeight" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.pWidth" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.vitesse_in" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.vitesse_ref" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.x_in" color="0"/>
+    <ConnectionShape InstanceName="Grille_1.y_in" color="0"/>
+    <ConnectionShape InstanceName="Grille_ameliorer.input" color="255"/>
+    <ConnectionShape InstanceName="Grille_du_test.input" color="0"/>
+    <ConnectionShape InstanceName="ImageViewer_1.input" color="0"/>
+    <ConnectionShape InstanceName="ImageViewer_2.input" color="0"/>
+    <ConnectionShape InstanceName="laser_scan_to_realobject_4.input" color="0"/>
+    <ConnectionShape InstanceName="laser_scan_to_xyz_points_2.dist_points" color="0"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.case_size" color="16711680"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.col_size" color="16711680"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.facteur" color="16711680"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.input" color="0"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.vitesse_in" color="65280"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.x_in" color="16711680"/>
+    <ConnectionShape InstanceName="MAPSARTEMIPS_1.y_in" color="16711680"/>
+    <ConnectionShape InstanceName="modelisation_de_connaissances_1.Dij" color="0"/>
+    <ConnectionShape InstanceName="OverlayDrawing_6.drawingObjects" color="0"/>
+    <ConnectionShape InstanceName="OverlayDrawing_6.input" color="0"/>
+    <ConnectionShape InstanceName="Projection_3.real_objects" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.add_1.output.input" color="65280"/>
+    <ConnectionShape InstanceName="RecFile_1.MAPSARTEMIPS_1.output.input" color="255"/>
+  </RTBoardView>
+</RTMapsDiagram>

@@ -1,0 +1,15 @@
+Information sur le module TROIS_2_TROIS
+
+Prend en entrée les valeurs x,y,z du lidar du véhicule.
+Et resort ces données une fois traité par le module.
+
+Ce module à comme propriété la multpilication pour la dimmension (m,cm,...) 
+des lidar à éffectuer pour obtenir les données en m.
+Une seconde propriétées qui consiste à sélectionner quel lidar entre celui de 
+gauche ou droite est uliser.
+Finalement deux propriétés pour définir le z_min et z_max que l'on utilise pour traiter les données.
+
+Pour le lidar de gauche on récupère d'abord y,x et z en passant en négatif le z.
+Soit y,x et -z sont récupérer.
+Pour le lidar de droite on récupère d'abord y,x et z en passant en négatif toutes les variables.
+Soit -y, -x et -z sont récupérer.

@@ -1,0 +1,15 @@
+Information sur le module maps_definitions_grille
+
+Prend en entré un Integer32, la vitesse en Km/h, la sortie output
+du module maps_add, mais peut prendre la vitesse actuelle du véhicule.
+
+On possède différente sortie qui sont tous des Integer32. Ces
+sorties permettent de créer notre grille d'acumulation.
+On possède en premier la sortie de la taille d'une colonne;
+la taille d'une ligne, le nombre de mètre en x que l'on veut,
+le nombre de y que l'on souhaite ainsi qu'un facteur de taille pour l'affichage
+qui multiplie.
+
+En propriété on prend la valeur x qui est jusqu'au plus loin que l'on souhaite notre affichage
+le y pour créer notre grille avec un coté +y et l'autre -y
+Finalement, la valeur du facteur que l'on souhaite appliqué pour l'affichage
