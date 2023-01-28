@@ -5,3 +5,5 @@ d’acquérir les données des différents capteurs (caméras, lidars, etc...), 
 - Zone 2 : Scène proche du véhicule, ralentissement et négociation de trajectoire
 (tactique)
 - Zone 3 : Horizon du véhicule, trajectoire à long terme (stratégique)
+
+Logiciel utilisé pour l'intégration au véhicul : RTMaps
